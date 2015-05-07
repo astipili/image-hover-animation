@@ -1,0 +1,127 @@
+/* Anything slider*/
+#slider2 { width: 800px; height: 442px; list-style: none; }
+
+/* Set slider2 panel sizes, Main & FX demo pages */
+#slider2 .panel1 { width: 800px; height: 451px}
+#slider2 .panel2 { width: 800px; height: 102px}
+#slider2 .panel3 { width: 800px; height: 360px}
+#slider2 .panel4 { width: 800px; height: 452px} /* With no specific size, it defaults to wrapper size; except in IE7, it needs a width defined, so set to 100% */
+#slider2 .panel5 { width: 800px; height: 442px}
+#slider2 .panel6 { width: 800px; height: 442px}
+#slider2 .panel7 { width: 800px; height: 360px}
+#slider2 .panel8 { width: 800px; height: 442px} /* With no specific size, it defaults to wrapper size; except in IE7, it needs a width defined, so set to 100% */
+#slider2 .panel9 { width: 800px; height: 442px}
+#slider2 .panel10 { width: 800px; height: 442px}
+
+/* Active State (has keyboard focus)*/
+.thumbNav{margin-top: 60px;}
+.thumbNav li{float: left;margin: 10px 18px 10px 0px;padding-bottom: 4px;}
+.thumbNav li:nth-child(5n+0){margin-right: 0;}
+.thumbNav li.cur{border-bottom: 1px solid #ff5900;	margin-bottom: 5px;}
+.thumbNav a {display: block;}
+
+.anythingControls a {	display: block; width: 145px; height: 82px; }
+ 
+/* NAVIGATION POSITIONING*/
+
+/* Navigation Arrows */
+.anythingSlider .arrow {
+	display: block;
+	position:absolute;
+	top: 0;
+	float: left;
+	z-index: 3;
+}
+
+.anythingSlider .arrow a {
+	display: block;
+	width: 28px;
+	height: 34px;
+	text-align: center;
+	outline: 0;
+	font-size: 0;
+	background:url(../img/work_details/motion_real/slider_control.jpg)
+}
+
+/* back arrow */
+.anythingSlider .back { right: 26px;}
+.anythingSlider .back a { background-position: 0 -4px; }
+.anythingSlider .back a:hover { background-position: 0 -35px; }
+/* forward arrow */
+.anythingSlider .forward { right: -1px; }
+.anythingSlider .forward a {background-position: 28px -4px; }
+.anythingSlider .forward a:hover{background-position: 28px -35px; }
+
+/* Navigation Links */
+.anythingSlider-default .anythingControls { outline: 0; display: none; }
+.anythingSlider-default .anythingControls ul { margin: 0; padding: 0; float: left; }
+.anythingSlider-default .anythingControls ul li { display: block }
+
+/* navigationSize window */
+.anythingControls .anythingNavWindow {overflow: hidden;float: left;}
+
+/*  COMMON SLIDER STYLING*/
+/* Overall Wrapper */
+.anythingSlider {
+	display: block;
+	overflow: visible !important;
+	position: relative;
+}
+/* anythingSlider viewport window */
+.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingSlider .anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation arrow text; indent moved to span inside "a", for IE7;
+  apparently, a negative text-indent on an "a" link moves the link as well as the text */
+.anythingSlider .arrow span {
+	display: block;
+	visibility: hidden;
+}
+/* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+.anythingSlider .arrow.disabled {
+	display: none;
+}
+/* all panels inside the slider; horizontal mode */
+.anythingSlider .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+/* vertical mode */
+.anythingSlider .vertical .panel {
+	float: none;
+}
+/* fade mode */
+.anythingSlider .fade .panel {
+	float: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* fade mode active page - visible & on top */
+.anythingSlider .fade .activePage {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	z-index:2;
+}
+

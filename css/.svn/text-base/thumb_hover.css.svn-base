@@ -1,0 +1,39 @@
+.thumbNav li a,
+.thumbNav li a img {	display: block;	position: relative;}
+.thumbNav li a {	overflow: hidden;}
+.thumbNav li a div {
+	position: absolute;
+	background: rgba(255,89,0,0.9);
+	width: 100%;
+	height: 100%;
+}
+.thumbNav li a div span {
+	display: block;
+	padding: 16px 0px 5px;
+	margin: 12px 5px 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px dotted rgba(255,255,255,0.5);
+	background: url(../img/work/tilted2.png) repeat-x left 0%;
+	font-size: 11px;
+}
+.thumbNav li a div.da-animate {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* Initial state classes: */
+.da-slideFromTop {	left: 0px;top: -100%;}
+.da-slideFromBottom {left: 0px;top: 100%;}
+.da-slideFromLeft {top: 0px; left: -100%;}
+.da-slideFromRight {top: 0px;	left: 100%;}
+/* Final state classes: */
+.da-slideTop {top: 0px;}
+.da-slideLeft {left: 0px;}
+
+
