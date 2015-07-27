@@ -1,6 +1,9 @@
-# profile-viewer-plugin
+# image-hover-animation
 
-nice animation plugin. That can be used for companies stuff images.
-Plugins animates the pictures position while revealing the text underneath.
+jquery+css code snippet that created thos nice animation picture hover. 
+
+Snippet animates the pictures position while revealing the text underneath. 
+
+There is a trick in animation. Not only it chnages the position of image, but also rolls up the bottom border so the animation looks more edgy.
 
 <img src="http://140coffee.com/demos/stuff_view/demo.png" />
