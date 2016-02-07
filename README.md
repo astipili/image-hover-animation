@@ -1,5 +1,7 @@
 # image-hover-animation
 
+<a href="http://140coffee.com/demos/stuff_view/">Demo</a>
+
 jquery+css code snippet that created thos nice animation picture hover. 
 
 Snippet animates the pictures position while revealing the text underneath. 
